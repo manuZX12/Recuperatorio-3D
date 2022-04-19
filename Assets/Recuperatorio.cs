@@ -12,9 +12,11 @@ public class Recuperatorio : MonoBehaviour
     float descuento;
     float descuento2;
     float descuentoaplicado;
+    public float altura;
+    public int edad;
     void Start()
     {
-        if(cantidad_gramos < 250 || cantidad_gramos > 3000)
+        if(cantidad_gramos < 250 || cantidad_gramos > 3000 || altura < 1.2 || edad < 13)
         {
             Debug.Log("Error");
         }
